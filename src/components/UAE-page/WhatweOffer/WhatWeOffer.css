@@ -1,0 +1,58 @@
+.whatweoffer-section{
+    padding: 80px 0 80px 0;
+    background-color: #F3F3F3;
+}
+.whatweoffer-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.whatweoffer-text h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Syncopate', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.whatweoffer-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.whatweoffer-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+.whatweoffer-card{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+    text-align: justify;
+    width: 300px;
+}
+.whatweoffer-card img{  
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.whatweoffer-card h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+.whatweoffer-card p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    text-align: justify;
+    line-height: 1.5
+}

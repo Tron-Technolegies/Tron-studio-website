@@ -1,0 +1,94 @@
+.portfolio-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-header {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Syncopate', Arial, sans-serif;
+  color: #000;
+}
+
+.practical-works {
+  color: #333;
+}
+
+.portfolio-button {
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #9F9F9F;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.portfolio-video-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.portfolio-video {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .portfolio-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portfolio-title {
+    font-size: 26px;
+  }
+
+  .portfolio-button {
+    font-size: 13px;
+  }
+
+  .portfolio-video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 22px;
+  }
+
+  .portfolio-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

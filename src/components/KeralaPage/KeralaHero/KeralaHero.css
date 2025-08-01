@@ -1,0 +1,176 @@
+/* KeralaHero.css */
+.keralahero-section {
+  background-color: white;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 40px 0; /* Added top padding for fixed navbar */
+}
+
+/* Title Styles */
+.keralahero-section-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 60px auto 60px;
+  color: #000;
+  text-align: center;
+  max-width: 900px;
+  font-family: 'Syncopate', sans-serif;
+  line-height: 1.2;
+}
+
+/* Hero Image Container */
+.keralahero-image-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.keralahero-section-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Left Side Text Box - No background */
+.kerala-hero-left-textbox {
+  position: absolute;
+  bottom: -30px;
+  left: 25px;
+  max-width: 320px;
+  z-index: 10;
+}
+
+.kerala-hero-description-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  font-weight: 400;
+}
+
+.kerala-hero-highlight {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Right Side Content - Below Image */
+.kerala-hero-right-section {
+  margin-right: 250px;
+}
+
+.kerala-hero-features-text {
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.kerala-hero-features-text p {
+  margin: 2px 0;
+  font-weight: 400;
+}
+
+/* Center Bottom CTA Button Section */
+.kerala-hero-cta-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.kerala-hero-proposal-button {
+  background: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: #000 0px 2px 2px 0px;
+}
+
+.kerala-hero-proposal-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.kerala-hero-button-arrow {
+  font-size: 14px;
+  font-weight: 400;
+}
+.keralahero-section-img{
+ border-radius: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .keralahero-section {
+    padding: 80px 20px 0;
+  }
+  
+  .keralahero-section-title {
+    font-size: 32px;
+    margin: 40px auto 40px;
+  }
+  
+  .keralahero-section-img {
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .kerala-hero-left-textbox {
+    position: static;
+    margin: 20px auto 0;
+    max-width: 100%;
+  }
+  
+  .kerala-hero-right-section {
+    position: static;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  
+  .kerala-hero-features-text {
+    text-align: center;
+    color: #666;
+  }
+
+  .kerala-hero-cta-section {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .keralahero-section {
+    padding: 70px 15px 0;
+  }
+  
+  .keralahero-section-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .keralahero-section-img {
+    height: 250px;
+    border-radius: 20px;
+  }
+  
+  .kerala-hero-left-textbox {
+    padding: 20px;
+    position: static;
+    margin: 20px auto 0;
+  }
+  
+  .kerala-hero-description-text {
+    font-size: 12px;
+  }
+}

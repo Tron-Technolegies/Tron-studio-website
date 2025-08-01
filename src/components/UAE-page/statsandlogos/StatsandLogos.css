@@ -1,0 +1,41 @@
+.statsandlogos-section {
+    padding: 20px 20px;
+    background-color: #F3F3F3;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+.stats-box {
+    flex: 1;
+    text-align: center;
+}
+
+.stats-box h3{
+    font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.stats-box p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.logos-container {
+    padding: 40px 50px;
+    margin-top: 20px;
+}
+
+.logos-container img {
+    width: auto;
+    height: 400px;
+    margin-left: 30%;
+}

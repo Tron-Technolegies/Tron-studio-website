@@ -1,0 +1,261 @@
+
+.who-we-are-section {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+  max-width: 400px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.img-button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.img-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.img-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-button svg {
+  transition: transform 0.3s ease;
+}
+
+.img-button:hover svg {
+  transform: translateX(5px);
+}
+
+.content-container {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.breadcrumb span {
+  display: inline-block;
+}
+
+.content-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Syncopate", Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.feature-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.feature-header:hover {
+  color: #333;
+}
+
+.feature-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.arrow-btn:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.arrow-btn.active {
+  background-color: #000;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.arrow-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.feature-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 0 0 0;
+}
+
+.feature-content.open {
+  max-height: 200px;
+  padding: 15px 0 0 0;
+}
+
+.feature-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+.bottom-section {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.beyond-frame {
+  flex: 1;
+}
+
+.beyond-frame h2 {
+  font-size: 72px;
+  font-weight: 900;
+  font-family: "Syncopate";
+  line-height: 0.9;
+  color: #000;
+  margin: 0;
+  
+}
+
+.capture-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.capture-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  margin-bottom: 20px;
+}
+
+.capture-image {
+  width: 200px;
+  height: 250px;
+}
+
+.capture-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .content-container {
+    padding-left: 0;
+  }
+  
+  .content-container h1 {
+    font-size: 36px;
+  }
+  
+  .bottom-section {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+
+  }
+  
+  .beyond-frame h2 {
+    font-size: 48px;
+    color: #000;
+    font-family: "Syncopate", sans-serif;
+  }
+  
+  .capture-section {
+    justify-content: center;
+  }
+  
+  .capture-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+    margin-bottom: 0;
+  }
+}

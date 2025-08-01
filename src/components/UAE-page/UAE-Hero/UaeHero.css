@@ -1,0 +1,171 @@
+/* UaeHero.css */
+.uaehero-section {
+  background-color: white;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 40px 0; /* Added top padding for fixed navbar */
+}
+
+/* Title Styles */
+.uaehero-section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 60px auto 60px;
+  color: #000;
+  text-align: center;
+  max-width: 900px;
+  font-family: 'Syncopate', sans-serif;
+  line-height: 1.2;
+}
+
+/* Hero Image Container */
+.uaehero-image-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.uaehero-section-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Left Side Text Box - No background */
+.dubai-hero-left-textbox {
+  position: absolute;
+  bottom: -20px;
+  left: 25px;
+  max-width: 320px;
+  z-index: 10;
+}
+
+.dubai-hero-description-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  font-weight: 400;
+}
+
+.dubai-hero-highlight {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Right Side Content - Below Image */
+.dubai-hero-right-section {
+  margin-right: 250px;
+}
+
+.dubai-hero-features-text {
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.dubai-hero-features-text p {
+  margin: 2px 0;
+  font-weight: 400;
+}
+
+/* Center Bottom CTA Button Section */
+.dubai-hero-cta-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.dubai-hero-proposal-button {
+  background: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: #000 0px 8px 10px 2px;
+}
+
+.dubai-hero-proposal-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.dubai-hero-button-arrow {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .uaehero-section {
+    padding: 80px 20px 0;
+  }
+  
+  .uaehero-section-title {
+    font-size: 32px;
+    margin: 40px auto 40px;
+  }
+  
+  .uaehero-section-img {
+    height: 300px;
+  }
+  
+  .dubai-hero-left-textbox {
+    position: static;
+    margin: 20px auto 0;
+    max-width: 100%;
+  }
+  
+  .dubai-hero-right-section {
+    position: static;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  
+  .dubai-hero-features-text {
+    text-align: center;
+    color: #666;
+  }
+
+  .dubai-hero-cta-section {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .uaehero-section {
+    padding: 70px 15px 0;
+  }
+  
+  .uaehero-section-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .uaehero-section-img {
+    height: 250px;
+  }
+  
+  .dubai-hero-left-textbox {
+    padding: 20px;
+    position: static;
+    margin: 20px auto 0;
+  }
+  
+  .dubai-hero-description-text {
+    font-size: 12px;
+  }
+}

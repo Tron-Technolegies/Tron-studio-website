@@ -1,0 +1,143 @@
+/* .ready-section{
+    padding: 60px 150px;
+    background:  #15151a;
+    width: 100%;
+}
+.ready-container1{
+    display: flex ;
+    gap: 20px;
+    align-items: center;
+    padding: 0% 10% 0% 10%;
+
+}
+.ready-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #E5E5E5;
+    font-family: 'Syncopate', sans-serif;
+    margin-right: 20px;
+}
+.ready-icon{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 300px;
+    left: 50px
+    
+}
+.ready-img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.ready-container2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0% 10% 0% 10%;
+}
+.ready-desc{
+    font-size: 16px;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+.ready-h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFC43A;
+    font-family: 'Syncopate', sans-serif;
+    text-align:end;
+    margin-left: 150px;
+}
+
+ */
+.ready-section {
+  padding: 60px 20px;
+  background: #15151a;
+  width: 100%;
+}
+
+.ready-container1,
+.ready-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.ready-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #E5E5E5;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.ready-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 200px;
+}
+
+.ready-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.ready-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #E5E5E5;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.ready-h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFC43A;
+  font-family: 'Syncopate', sans-serif;
+  text-align: end;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .ready-container1,
+  .ready-container2 {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .ready-title,
+  .ready-h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .ready-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 100px;
+    position: static;
+  }
+
+  .ready-img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .ready-desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .ready-h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
