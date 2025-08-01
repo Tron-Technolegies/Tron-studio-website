@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background: transparent;
+  background: rgba(217, 213, 213, 0.284);
   color: white;
   box-sizing: border-box;
 }
@@ -40,13 +40,13 @@
 }
 
 .navbarinpage-nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #FFC43A;
+  background-color: #ffc43a;
   transition: width 0.3s ease;
 }
 
@@ -75,9 +75,9 @@
 }
 
 .navbar-contact-us:hover {
-  border-color: #FFC43A;
+  border-color: #ffc43a;
   background: rgba(255, 196, 58, 0.1);
-  color: #FFC43A;
+  color: #ffc43a;
   transform: translateY(-2px);
 }
 
@@ -102,13 +102,13 @@
 }
 
 .hamburger-menu:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1); /* Adjusted for better contrast with black lines */
 }
 
 .hamburger-line {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black; /* Changed from white to black */
   transition: all 0.3s ease;
   border-radius: 2px;
 }
@@ -204,10 +204,11 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  touch-action: manipulation;
 }
 
 .mobile-navbarinpage-content a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -232,10 +233,11 @@
   align-self: stretch;
   padding: 15px 24px;
   font-size: 16px;
-  background: #FFC43A;
+  background: #ffc43a;
   color: black;
   border: none;
   border-radius: 10px;
+  touch-action: manipulation;
 }
 
 .mobile-button:hover {
@@ -249,15 +251,15 @@
   .desktop-button {
     display: none;
   }
-  
+
   .mobile-navbarinpage {
     display: block;
   }
-  
+
   .navbarinpage {
     padding: 15px 20px;
   }
-  
+
   .navbarinpage-logo img {
     width: 80px;
   }
@@ -267,18 +269,22 @@
   .navbarinpage {
     padding: 15px 15px;
   }
-  
+
   .navbarinpage-logo img {
     width: 70px;
   }
-  
+
   .mobile-nav-links {
     width: 280px;
   }
-  
+
   .hamburger-line {
     width: 22px;
     height: 2.5px;
+  }
+
+  .mobile-navbarinpage-content {
+    padding: 20px 15px;
   }
 }
 
@@ -287,8 +293,18 @@
     width: 100vw;
     right: -100vw;
   }
-  
+
   .mobile-nav-links.open {
     right: 0;
+  }
+
+  .mobile-navbarinpage-content a {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .mobile-button {
+    font-size: 14px;
+    padding: 12px 20px;
   }
 }

@@ -16,7 +16,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 30px;
-  font-family: 'Syncopate', Arial, sans-serif;
+  font-family: "Syncopate", Arial, sans-serif;
 }
 
 .feedback-slider {
@@ -101,4 +101,19 @@
 
 .slider-controls button:hover:not(:disabled) {
   opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .feedback-header {
+    font-size: 24px;
+  }
+
+  .feedback-card {
+    flex: 0 0 calc(100% / 2); /* Show 2 cards at a time on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback-card {
+    flex: 0 0 100%; /* Show 1 card at a time on extra small screens */
+  }
 }

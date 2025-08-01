@@ -1,74 +1,80 @@
 .ourteam-section {
-  padding: 80px 20px;
+  padding: 80px 40px;
   background: #ffffff;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .top-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
   position: relative;
-  margin-bottom: 40px;
-  gap: 40px;
 }
 
 .text-container {
   flex: 1;
-  min-width: 280px;
-  max-width: 40%;
+  max-width: 500px;
   position: relative;
-  margin-top: 120px;
+  padding-top: 40px;
 }
 
 .icon-bg {
   position: absolute;
-  top: -20px;
-  left: 160px;
-  width: 160px;
-  opacity: 0.07;
+  top: -40px;
+  left: 250px;
+  width: 400px;
   z-index: 0;
-  margin-left: 50%;
-  filter: brightness(0) saturate(100%);
+  pointer-events: none;
 }
 
 .ourteam-title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #333;
-  margin-bottom: 10px;
-  position: relative;
+  color: #666;
+  margin-bottom: 15px;
   z-index: 1;
+  position: relative;
+  letter-spacing: 2px;
 }
 
 .meetbrains-header {
-  font-size: 42px;
-  font-weight: 800;
-  margin: 0;
-  font-family: 'Syncopate', sans-serif;
-  position: relative;
+  font-size: 54px;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+  font-family: "Syncopate", Arial, sans-serif;
   z-index: 1;
+  position: relative;
+  line-height: 1.1;
+  color: #000;
 }
 
 .ourteam-desc {
-  font-size: 14px;
-  color: #444;
-  margin-top: 10px;
-  position: relative;
+  font-size: 16px;
+  color: #666;
+  margin: 0;
   z-index: 1;
+  position: relative;
+  line-height: 1.5;
 }
 
 .top-members {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
   align-items: flex-end;
-  justify-content: flex-end;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
 }
 
 .team-card {
-  width: 250px;
-  height: 350px;
+  width: 100%;
   background: #000;
   border-radius: 15px;
   overflow: hidden;
@@ -76,91 +82,177 @@
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  aspect-ratio: 0.8;
 }
 
 .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .team-card img {
   width: 100%;
-  height: 260px;
+  height: 75%;
   object-fit: cover;
+  display: block;
 }
 
 .card-info {
-  padding: 12px 16px;
+  padding: 15px 20px;
   color: #fff;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .name {
   font-weight: 600;
   font-size: 16px;
-  margin-bottom: 4px;
+  margin: 0 0 5px 0;
+  line-height: 1.2;
 }
 
 .role {
   font-size: 14px;
-  opacity: 0.85;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.2;
 }
 
-/* Grid for lower cards */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
-}
-
-/* ✅ Responsive Design */
-@media (max-width: 1024px) {
-  .text-container {
-    max-width: 100%;
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .ourteam-section {
+    padding: 60px 30px;
   }
 
+  .meetbrains-header {
+    font-size: 48px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  .top-members {
+    gap: 25px;
+  }
+
+  .icon-bg {
+    left: 200px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
   .top-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 40px;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .icon-bg {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    width: 300px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .top-members {
     justify-content: center;
+    gap: 20px;
+  }
+
+  .meetbrains-header {
+    font-size: 42px;
   }
 }
 
 @media (max-width: 768px) {
+  .ourteam-section {
+    padding: 40px 20px;
+  }
+
   .meetbrains-header {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .ourteam-title {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .ourteam-desc {
-    font-size: 13px;
-  }
-
-  .team-card {
-    width: 90%;
-    max-width: 280px;
+    font-size: 14px;
   }
 
   .card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .top-members {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .top-container {
+    gap: 30px;
+  }
+
+  .icon-bg {
+    width: 250px;
+    top: -20px;
   }
 }
 
 @media (max-width: 480px) {
-  .text-container {
-    margin-top: 60px;
+  .ourteam-section {
+    padding: 30px 15px;
+  }
+
+  .meetbrains-header {
+    font-size: 28px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .top-members {
+    max-width: 300px;
   }
 
   .icon-bg {
-    left: 50px;
-    width: 120px;
+    width: 200px;
+    top: -10px;
+  }
+
+  .card-info {
+    padding: 12px 15px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .role {
+    font-size: 13px;
   }
 }
